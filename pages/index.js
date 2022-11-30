@@ -10,7 +10,7 @@ import WeatherDisplay from '../components/weatherDisplay';
 // fetches Los Angeles weather data on pre render
 export async function getServerSideProps() {
 
-  const res = await fetch('http://api.weatherapi.com/v1/current.json?' + new URLSearchParams({
+  const res = await fetch('https://api.weatherapi.com/v1/current.json?' + new URLSearchParams({
     key: '277121a6f9ef4bd48c8222935222911',
     q: 'Los Angeles',
   }));
@@ -32,7 +32,7 @@ export default function Home({ data }) {
   const [weather, setWeather] = useState('');
   console.log(weather);
   return (
-    <Box display='flex' flexDir='column' w='95%' m='5rem auto' p='1rem' gap={5} border='1px' borderColor='white'>
+    <Box display='flex' flexDir='column' w='95%' m='5rem auto' p='1rem' gap={5} border='1px' borderColor='black'>
       <Head>
         <title>Weather Checker Application</title>
       </Head>

@@ -16,7 +16,7 @@ const SearchBar = ({ setWeather }) => {
   }
 
   const search = async () => {
-    const res = await fetch('http://api.weatherapi.com/v1/current.json?' + new URLSearchParams({
+    const res = await fetch('https://api.weatherapi.com/v1/current.json?' + new URLSearchParams({
       key: '277121a6f9ef4bd48c8222935222911',
       q: input,
     }));

@@ -20,15 +20,15 @@ const WeatherDisplay = ({ data }) => {
             <Text>{data.location.region},</Text>
             <Text>{data.location.name}</Text>
           </Box>
-          <Box display='flex' justifyContent='space-between' borderBottom='1px' borderColor='white'>
+          <Box display='flex' justifyContent='space-between' borderBottom='1px' borderColor='black'>
             <Text>Lattitude:</Text>
             <Text>{data.location.lat}</Text>
           </Box>
-          <Box display='flex' justifyContent='space-between' borderBottom='1px' borderColor='white'>
+          <Box display='flex' justifyContent='space-between' borderBottom='1px' borderColor='black'>
             <Text>Longitude:</Text>
             <Text>{data.location.lon}</Text>
           </Box>
-          <Box display='flex' justifyContent='space-between' borderBottom='1px' borderColor='white'>
+          <Box display='flex' justifyContent='space-between' borderBottom='1px' borderColor='black'>
             <Text>Local Time:</Text>
             <Text>{data.location.localtime}</Text>
           </Box>
@@ -38,15 +38,15 @@ const WeatherDisplay = ({ data }) => {
           <Box display='flex' gap={2}>
             <Text>{data.current.condition.text}</Text>
           </Box>
-          <Box display='flex' justifyContent='space-between' borderBottom='1px' borderColor='white'>
+          <Box display='flex' justifyContent='space-between' borderBottom='1px' borderColor='black'>
             <Text>Temp:</Text>
             <Text>{data.current.temp_f} f</Text>
           </Box>
-          <Box display='flex' justifyContent='space-between' borderBottom='1px' borderColor='white'>
+          <Box display='flex' justifyContent='space-between' borderBottom='1px' borderColor='black'>
             <Text>Wind:</Text>
             <Text>{data.current.wind_mph} mph</Text>
           </Box>
-          <Box display='flex' justifyContent='space-between' borderBottom='1px' borderColor='white'>
+          <Box display='flex' justifyContent='space-between' borderBottom='1px' borderColor='black'>
             <Text>Visual Distance:</Text>
             <Text>{data.current.vis_miles} miles</Text>
           </Box>
